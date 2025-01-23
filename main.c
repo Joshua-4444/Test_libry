@@ -1,8 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <locale.h>
 #include "libry.h"
 
 int main() {
+setlocale(LC_ALL,"");
+
     // Test Exercice 1
     printf("*****************Exercice 1*****************\n");
     afficherBonjour();
@@ -50,13 +52,13 @@ int main() {
     printf("Entrer le troisieme nombre ");
     scanf("%d", &n3);
     trierTroisEntiers(&n1, &n2, &n3);
-    printf("Entiers triés : %d, %d, %d\n", n1, n2, n3);
+    printf("Entiers triÃ©s : %d, %d, %d\n", n1, n2, n3);
 
     // Test Exercice 7
     printf("*****************Exercice 7*****************\n");
     devinerNombre();
 
-    // Exercice 16: Permutation de deux caractères
+    // Exercice 16: Permutation de deux caractÃ¨res
     printf("*****************Exercice 16*****************\n");
     char x1,y1;
     printf("Entrer le premier caractere:");
@@ -65,7 +67,7 @@ int main() {
     scanf(" %c", &y1);
     printf("Avant permutation: x1 = %c, y1 = %c\n", x1, y1);
     permuterChar(&x1, &y1);
-    printf("Après permutation: x1 = %c, y1 = %c\n", x1, y1);
+    printf("AprÃ¨s permutation: x1 = %c, y1 = %c\n", x1, y1);
 
     // Exercice 17: Somme de deux entiers
     printf("*****************Exercice 17*****************\n");
